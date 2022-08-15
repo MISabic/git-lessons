@@ -1,0 +1,75 @@
+|-------------------|------------------------------------------------------------------------|
+| Best Git Tutorial | https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud |
+|-------------------|------------------------------------------------------------------------|
+					| https://git-scm.com/book/en/v1/										 |
+					|------------------------------------------------------------------------|
+					
+1. Copy and paste in Git Bash.
+
+Ans. Just highlight the part you want to copy and press INSERT button.  
+
+2. Change the default location of Git Bash on Windows.
+
+Ans. Right click on your Git Bash icon and select properties. Change the "Start in" entry with your git files location.
+
+3. Caching your GitHub password in Git for windows.
+
+Ans. Use this command "git config --global credential.helper wincred". It will ask one time for username and password. Note : You need Git 1.7.10 or newer to use the credential helper.
+
+4. The ORIGIN Remote
+
+Ans. When you clone a repository with git clone, it automatically creates a remote connection called origin pointing back to the cloned repository. This is useful for developers creating a local copy of a central repository, since it provides an easy way to pull upstream changes or publish local commits. This behavior is also why most Git-based projects call their central repository origin.
+
+|------------------------|
+| :: Some Terminology :: |
+|------------------------|
+
+fork - "fork" creates your own copy of someone else's repository
+
+|-----------------------------------|
+| :: Some Necessary Git Commands :: |
+|-----------------------------------|
+
+• git clone <url>				 - makes a copy of a repository
+• git add *						 - adds all changed files
+• git commit -am "<message>"	 - adds and commits in same step
+• git reset HEAD~				 - undo git commit, most recent commit
+• git reset HEAD~<#no>			 - undo to the #no of git commit, count start from 0,1,2,...; most recent to oldest
+• git reset --hard origin/master - reverts code back to remote repository version
+• git branch					 - shows all branches of code
+• git branch <branch_name>		 - creates a branch_name branch
+• git merge <branch_name>		 - merges the branch branch_name with current branch
+• git branch -D <branch_name>	 - delete the branch_name branch
+• git checkout <branch_name>	 - switch to a branch
+• git stash						 - saves it on a stack of unfinished changes that you can reapply at any time
+								   https://git-scm.com/book/en/v1/Git-Tools-Stashing 
+• git stash apply				 - reapply the one you just stashed
+• git stash apply stash@{#no}	 - if you want to apply one of the older stashes
+• git stash drop				 - the apply option only tries to apply the stashed work; you continue to have it on your stack; remove a stash
+• git stash pop					 - apply the stash and then immediately drop it from your stack
+• git stash list				 - to see which stashes you’ve stored
+• git push						 - sends committed changes to remote repository
+• git pull						 - retrieve changes from remote repository
+• git status					 - inspects the contents of the working directory and staging area
+
+|-------------------------|
+| :: Some Git Commands :: |
+|-------------------------|
+
+• git blame -L <n,m> <filename>	 - to see when each line in between n & m, of the method was last edited and by whom; counting from 1
+• git checkout -b <branch_name>	 - to create & checkout a new branch
+• git reset --hard <commit>		 - reverts code back to a previous commit
+• git log						 - shows a list of all previous commits
+• git init 						 - creates a new Git repository
+• git add <filename>			 - tells git to include the file in the next revision to the repository
+• git add -A					 - adds all changed files
+• git commit -m "<message>"		 - saves the changes to repository as a new revision
+								   records a message
+• git rm <filename>				 - deletes a file from the repository
+• git mv <Fr.f.name> <To.f.name> - rename a file in the repository
+• git diff						 - shows the difference between the working directory and the staging area
+• git remote -v					 - Lists a Git project's remotes.
+• git --version					 - check git version 
+
+
+
