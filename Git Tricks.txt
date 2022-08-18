@@ -2,7 +2,7 @@
 | :: Git Commands :: |
 |--------------------|
 
-• Count total number of lines changed by a specific author
+• Count total number of lines changed by author(s)
 
 Specific Author => 
 
